@@ -118,15 +118,7 @@ Item {
                             }
                         }
 
-                        MouseArea {
-                            anchors.fill: parent
-                            acceptedButtons: Qt.RightButton
-                            onClicked: contextMenu.open()
-                            enabled: true
-                        }
-
-                        ContextMenuType {
-                            id: contextMenu
+                        ContextMenu.menu: ContextMenuType {
                             textObj: textField
                         }
 
